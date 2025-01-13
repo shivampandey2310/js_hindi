@@ -1,0 +1,58 @@
+const JsUSer ={
+    name: "Shivam",
+    age:18,
+    location: "Boisar",
+    email: "123@gmail.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday","Saturday"]
+}
+
+// console.log(JsUSer.email);
+// console.log(JsUSer["name"]);
+const mySym = Symbol("key1");
+
+const dobj = {
+    [mySym] : "mkey1"
+}
+
+// console.log(dobj[mySym]);
+
+JsUSer.greetings = function(){
+    console.log("Hello");
+}
+
+// console.log(JsUSer.greetings());
+
+const tinderuser = {};
+
+tinderuser.id = "123abc";
+tinderuser.name = "Shivam";
+tinderuser.isLoggedIn = false;
+
+// console.log(tinderuser);
+
+//object inside object
+const regularUser = {
+    email : "123@gmail.com",
+    fullname : {
+        userFullName: {
+            firstName: "Shivam",
+            lastName: "Pandey"
+        }
+    }
+
+}
+
+// console.log(regularUser.fullname)
+// console.log(regularUser.fullname.userFullName)
+
+//How to combine objects
+
+const obj1= {1:"a",2:"b"}
+const obj2 = {3:"a",4:"b"}
+
+// const obj3 = Object.assign({},obj1,obj2)
+// console.log(obj3);
+
+const obj3 = {...obj1,...obj2};
+console.log(obj3);
